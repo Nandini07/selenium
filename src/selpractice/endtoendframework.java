@@ -7,6 +7,7 @@ import java.util.*;
 import java.util.stream.Stream;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -43,7 +44,7 @@ public class endtoendframework extends BaseTest{
 		//Constructor for landing
 		
 		//landingpage lp= launchapp();
-		lp.goTo();
+		//lp.goTo();
 		lp.loginapp("nandinikandula07@gmail.com", "Nandini@2407");
 		
 		productcatalog pc= new productcatalog(driver);
@@ -93,7 +94,7 @@ public class endtoendframework extends BaseTest{
 		//driver.findElement(By.xpath("//span[@class='ng-star-inserted']")).click();
 		//driver.findElement(By.cssSelector(".action__submit")).click();
 		//String text=driver.findElement(By.cssSelector(".hero-primary")).getText();
-		
+	
 	}
 
 }

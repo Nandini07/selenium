@@ -1,6 +1,7 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,6 +30,8 @@ public class checkoutpage extends reusablecomponents{
 	public void placeOrder(String countryname) {
 		country.sendKeys(countryname);
 		selcountry.click();
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+        js.executeScript("window.scrollBy(1500, 700)");
 		placeord.click();
 		//return new ConfirmPage(driver);
 	}
