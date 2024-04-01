@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <test parallel="none" name="Test(failed)" preserve-order="true">
+    <classes>
+      <class name="selpractice.errorvalidation">
+        <methods>
+          <include name="closeapp"/>
+          <include name="launchapp"/>
+        </methods>
+      </class> <!-- selpractice.errorvalidation -->
+      <class name="selpractice.endtoendframework">
+        <methods>
+          <include name="submitorder"/>
+          <include name="closeapp"/>
+          <include name="launchapp"/>
+        </methods>
+      </class> <!-- selpractice.endtoendframework -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
