@@ -10,7 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class reusablecomponents {
+import testcomponents.BaseTest;
+
+public class reusablecomponents extends BaseTest {
 	
 	WebDriver driver;
 	

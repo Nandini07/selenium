@@ -18,13 +18,18 @@ import org.testng.annotations.Test;
 import pageobjects.ConfirmPage;
 import pageobjects.cartpage;
 import pageobjects.checkoutpage;
-import pageobjects.landingpage;
 import pageobjects.productcatalog;
 import testcomponents.BaseTest;
 
-public class endtoendframework extends  BaseTest{
+public class endtoendframework extends BaseTest{
 
 
+	
+	@Test
+	public void passorder() {
+		System.out.println("pass order");
+	}
+	
 	@Test
 	
 	public void submitorder() throws IOException {
@@ -38,8 +43,9 @@ public class endtoendframework extends  BaseTest{
 		//Constructor for landing
 		
 		//landingpage lp= launchapp();
-		//lp.goTo();
+		lp.goTo();
 		lp.loginapp("nandinikandula07@gmail.com", "Nandini@2407");
+		
 		productcatalog pc= new productcatalog(driver);
 		pc.addProducttoCart(productname);
 		pc.goToCartPage();
