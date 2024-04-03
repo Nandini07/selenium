@@ -33,7 +33,7 @@ public class endtoendframework extends BaseTest{
 	
 	@Test
 	
-	public void submitorder() throws IOException {
+	public void submitorder() throws IOException  {
 		
 		//WebDriver driver= new ChromeDriver();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
